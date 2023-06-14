@@ -10,15 +10,12 @@ entity Product {
 	version Integer,
 	productId String,
 	name String,
-	price BigDecimal,
+	price Integer,
 	liveDate Instant
 }
 
 
 
-
-// Set pagination options
-paginate Product with infinite-scroll
 paginate Product with pagination
 
 // Use Data Transfer Objects (DTO)
